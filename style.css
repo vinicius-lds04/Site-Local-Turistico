@@ -11,8 +11,40 @@ main {
     width: 1280px;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, ul {
     margin: 0;
+}
+
+h1, h2, h3 {
+    color: #1B1B1B;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 28px;
+    padding-left: 10px;
+}
+
+p, li, footer {
+    font-size: 16px;
+    color: #333333;
+}
+
+li::marker {
+    color: #333333;
+}
+
+.headline {
+    font-size: 16px;
+    color: #E1624F;
+    font-weight: bold;
 }
 
 .image {
@@ -22,25 +54,25 @@ h1, h2, h3, p {
 }
 
 .divisor {
-    border: solid black 1px;
+    border: solid #D9D9D9 1px;
     margin: 40px 0;
 }
 
 /* Content Box */
 .content-box {
-    padding: 88px 80px;
+    padding: 88px 80px 0px;
 }
 
 /* Title Page */
-.title-page .headline+.title {
+.title-page .headline + .title {
     margin-top: 8px;
 }
 
-.title-page+.description-image {
+.title-page + .description-image {
     margin-top: 40px;
 }
 
-.description-image .image+.paragraph {
+.description-image .image + .paragraph {
     margin-top: 24px;
 }
 
@@ -67,10 +99,57 @@ h1, h2, h3, p {
     height: 350px;
 }
 
-.card-travel+.card-travel {
+.card-travel + .card-travel {
     margin-top: 48px;
 }
 
-.content-list .image+.content-card {
+.content-list .image + .content-card {
     margin-top: 20px;
+}
+
+.content-card .title + .paragraph {
+    margin-top: 4px;
+}
+
+.content-card .tag-title {
+    margin-top: 1lh;
+}
+
+.tag-title, .tag-list {
+    font-weight: bold;
+}
+
+.tag-list {
+    padding-left: 24px;
+}
+
+#historia {
+    color: #0C51A7;
+}
+
+#casais {
+    color: #E95310;
+}
+
+#familias {
+    color: #E5245E;
+}
+
+#orcamento {
+    color: #591B98;
+}
+
+/* End Description */
+.description {
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    font-family: "Alice", serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 65px;
+    padding-bottom: 48px;
+    gap: 5px;
 }
