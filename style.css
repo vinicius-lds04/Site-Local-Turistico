@@ -8,7 +8,8 @@ main {
     background-color: #F5F4F0;
     margin: 0 auto;
     border-radius: 40px;
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
 }
 
 h1, h2, h3, p, ul {
@@ -48,7 +49,8 @@ li::marker {
 }
 
 .image {
-    width: 1120px;
+    width: 100%;
+    max-width: 1120px;
     border-radius: 28px;
     object-fit: cover;
 }
